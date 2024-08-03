@@ -28,21 +28,20 @@ SupportHub is an online support system built with Laravel. It allows customers t
 
 1. **Clone the Repository**:
    
-bash
-   git clone https://github.com/skb-ahmd/supportHub.git
-   cd supportHub
+-  git clone https://github.com/skb-ahmd/supportHub.git
+-  cd supportHub
 
 
 2. **Install Dependencies**:
    
-bash
-   composer install
-   npm install
+
+ - composer install
+ - npm install
 
 
 3. **Create a .env File**:
    
-bash
+
    cp .env.example .env
 
    - **Database Configuration**:
@@ -52,26 +51,26 @@ bash
 
 4. **Generate Application Key**:
    
-bash
-   php artisan key:generate
+
+   - php artisan key:generate
 
 
 5. **Run Migrations**:
    
-bash
-   php artisan migrate
+
+   - php artisan migrate
 
 
 6. **Build Frontend Assets**:
    
-bash
-   npm run dev
+
+   - npm run dev
 
 
 7. **Serve the Application**:
    
-bash
-   php artisan serve
+
+   - php artisan serve
 
 
 ## Usage
