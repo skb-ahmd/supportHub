@@ -29,7 +29,7 @@ SupportHub is an online support system built with Laravel. It allows customers t
 1. **Clone the Repository**:
    
 bash
-   git clone https://github.com/skbahmd/supportHub.git
+   git clone https://github.com/skb-ahmd/supportHub.git
    cd supportHub
 
 
