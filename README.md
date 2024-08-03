@@ -123,3 +123,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Credits
 
 - The user interface is based on open-source resources provided by [Creative Tim](https://www.creative-tim.com/product/argon-dashboard). Special thanks for their amazing UI components.
+
+
+## Screenshots
+
+### Desktop View
+![Desktop - Submit Ticket](screenshots/desktop-submit-ticket.png)
+*The form for submitting a new support ticket.*
+
+![Desktop - Ticket Status](screenshots/desktop-ticket-details.png)
+*Checking the status of a ticket.*
+
+### Mobile View
+![Mobile -  Ticket](screenshots/mobile-tickets.png)
+*Mobile view for submitting a new support ticket.*
+
+### Tablet View
+![Tablet - Ticket Status](screenshots/tablet-ticket-details.png)
+*Mobile view for checking ticket status.*
