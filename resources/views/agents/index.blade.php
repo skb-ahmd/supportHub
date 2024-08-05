@@ -2,8 +2,8 @@
 
 
 @section('css')
-@vite(['https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.min.css'])
-</head>
+<!-- @vite(['https://cdn.datatables.net/2.1.3/css/dataTables.dataTables.min.css']) -->
+
 @endsection
 @section('content')
 <div class="card shadow-sm">
@@ -17,36 +17,41 @@
             <th>Customer Name</th>
             <th>Status</th>
             <th>Created At</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
           @foreach($tickets as $ticket)
             <tr>
-              <td>{{ $ticket->id }}</td>
-              <td>{{ $ticket->customer_name }}</td>
-              <td>
-                @php
-           
-                  $status = $ticket->status;
-                  $formattedStatus = ucwords(str_replace('_', ' ', $status));
-                @endphp
-                {{ $formattedStatus }}
-              </td>
-              <td>{{ $ticket->created_at->format('d M Y, H:i') }}</td>
-              <td class="align-middle">
-                <a href="{{ route('tickets.show', $ticket->id) }}" class="text-secondary font-weight-bold text-xs">View</a>
-              </td>
+            <td>{{ $ticket->id }}</td>
+            <td>{{ $ticket->customer_name }}</td>
+            <td>
+              @php
+
+        $status = $ticket->status;
+        $formattedStatus = ucwords(str_replace('_', ' ', $status));
+        @endphp
+              {{ $formattedStatus }}
+            </td>
+            <td>{{ $ticket->created_at->format('d M Y, H:i') }}</td>
+            <td class="align-middle">
+              <a href="{{ route('tickets.show', $ticket->id) }}"
+              class="text-secondary font-weight-bold text-xs">View</a>
+            </td>
             </tr>
-          @endforeach
+      @endforeach
         </tbody>
       </table>
     </div>
   </div>
-@endsection
+  @endsection
 
-@section('script')
-<script>
-// let table = new DataTable('#ticketTable');
-</script>
-@vite(['https://cdn.datatables.net/2.1.3/js/dataTables.min.js'])
-@endsection
+  @section('script')
+  <script src="https://cdn.datatables.net/2.1.3/js/dataTables.min.js" ></script>
+  <!-- @vite(['']) -->
+  <script>
+    // alert()
+    // console.log('sdfsd');
+    let table = new DataTable('#ticketTable');
+  </script>
+  @endsection
